@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tinynft/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/tinynft/static/js/main.16b13095.chunk.js",
-    "main.js.map": "/tinynft/static/js/main.16b13095.chunk.js.map",
+    "main.js": "/tinynft/static/js/main.dd843e52.chunk.js",
+    "main.js.map": "/tinynft/static/js/main.dd843e52.chunk.js.map",
     "runtime-main.js": "/tinynft/static/js/runtime-main.3508dd8d.js",
     "runtime-main.js.map": "/tinynft/static/js/runtime-main.3508dd8d.js.map",
     "static/js/2.0abf6d8f.chunk.js": "/tinynft/static/js/2.0abf6d8f.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3508dd8d.js",
     "static/js/2.0abf6d8f.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.16b13095.chunk.js"
+    "static/js/main.dd843e52.chunk.js"
   ]
 }
