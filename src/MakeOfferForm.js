@@ -31,6 +31,7 @@ const MakeOfferForm = ({open, onClose, data}) => {
     const seaport = new OpenSeaPort(window.ethereum, {
       networkName: Network.Main
     })
+    const referrerAddress = '0x9d280d898BcBfd84656c36d18a82D5BaeF54020C'
     const offer = await seaport.createBuyOrder({
       asset: {
         tokenId: data.tokenId,
@@ -39,7 +40,8 @@ const MakeOfferForm = ({open, onClose, data}) => {
       },
       accountAddress: accounts[0],
       startAmount: form.price,
-      expirationTime: Math.round(Date.now()/1000 + 60*60*24)
+      expirationTime: Math.round(Date.now()/1000 + 60*60*24),
+      referrerAddress
     })
     onClose()
   }

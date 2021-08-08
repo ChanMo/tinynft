@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
     marginBottom: theme.spacing(3)
   },
   actions: {
-    '& > button': {
+    '& > *': {
       marginRight: theme.spacing(1)
     }
   },
@@ -85,17 +85,18 @@ const Asset = () => {
               component="h1">{data.name}</Typography>
             <Typography gutterBottom>owner: {data.owner.user.username}</Typography>
             <div className={classes.actions}>
+              {/**
               <Button
                 color="primary"
                 variant="contained"
-              >Buy now</Button>
-              <Button color="primary" variant="outlined"
-                onClick={()=>setOpen(true)}>Make Listing</Button>
+              >Buy now</Button>**/}
               <Button
                 color="primary"
-                variant="outlined"
+                variant="contained"
                 component="a" target="_blank"
                 href={data.openseaLink}>view on opensea</Button>
+              <Button color="primary" variant="outlined"
+                onClick={()=>setOpen(true)}>Make Listing</Button>
             </div>
           </div>
           <SellOrders data={data} />

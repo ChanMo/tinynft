@@ -28,9 +28,11 @@ const SellOrders = ({data}) => {
       networkName: Network.Main
     })
     const order = await seaport.api.getOrder({side:OrderSide.sell})
+    const referrerAddress = '0x9d280d898BcBfd84656c36d18a82D5BaeF54020C'
     const transactionHash = await seaport.fulfillOrder({
       order,
-      accountAddress: accounts[0]
+      accountAddress: accounts[0],
+      referrerAddress
     })
   }
 

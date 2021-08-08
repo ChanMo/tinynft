@@ -9,7 +9,7 @@ const Navbar = () => {
     <AppBar position="fixed">
       <Toolbar>
         <Typography color="inherit" variant="h6" component={Link} to="/">
-          DSOOU
+          TINYNFT
         </Typography>
       </Toolbar>
     </AppBar>

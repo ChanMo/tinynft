@@ -44,7 +44,7 @@ const Home = () => {
       <Typography gutterBottom variant="h3" component="h1">Recommend NFT</Typography>
       <Grid container spacing={1}>
         {assets.map((asset, index) => (
-          <Grid item sm={6} md={3} key={index.toString()}>
+          <Grid item xs={12} sm={6} md={3} lg={4} key={index.toString()}>
             <Card>
               <CardActionArea
                 onClick={()=>history.push(`/${asset.tokenAddress}/${asset.tokenId}`)}>
